@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple Instance</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    
 </head>
 <body>
-    
+    <div id="app1">
+        <p>This is instance {{value}}</p>
+        <button @click="changeValue">Click me to change 2nd instance value</button>
+    </div>
+    <hr>
+
+    <div id="app2">
+        <p>This is instance {{value}}</p>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
 </body>
 </html>
